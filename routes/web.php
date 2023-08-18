@@ -17,6 +17,8 @@ Route::post('/supports', [SupportController::class, 'store'])->name('supports.st
 
 Route::get('/supports/create', [SupportController::class, 'create'])->name('supports.create');
 
+Route::get('/supports/{id}', [SupportController::class, 'show'])->name('supports.show');
+
 Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
 
 Route::get('/', function () {
